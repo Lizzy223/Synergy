@@ -267,7 +267,7 @@ const Profile = () => {
         >
           Timeline
         </Text>
-        <Tabs isFitted w={['full', '536px']}>
+        <Tabs isFitted m='auto' w={['90%', '536px']}>
           <TabList mb="1em">
             <Tab
               color="#878787"
@@ -342,7 +342,7 @@ const Profile = () => {
         gap={['6', '6']}
         borderTop="2px solid #033945"
         display={['flex', 'none']}
-        w="100"
+        w="full"
         alignItems="center"
       >
         <Link>
