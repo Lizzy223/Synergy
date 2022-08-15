@@ -343,6 +343,7 @@ const Profile = () => {
         borderTop="2px solid #033945"
         display={['flex', 'none']}
         w="full"
+        justifyContent='space-evenly'
         alignItems="center"
       >
         <Link>
