@@ -163,8 +163,34 @@ const Profile = () => {
           <Textarea
             w={['75%', '401px']}
             h={['93px', '1.4px']}
+            display={['none','block']}
             placeholder="This is your Bio. Tell your story"
             textAlign="center"
+            color='#566467'
+            resize="none"
+            fontSize={['12px', '14px']}
+            py="1.5rem"
+            outline="0 !important"
+            _focus={{ outline: 'none !important' }}
+            boxShadow="none !important"
+            style={{
+              border: '1x solid',
+              borderImageSlice: 1,
+              borderWidth: '1px',
+              boxShadow:
+                '1px 1px 1px 1px linear-gradient(90deg, rgba(254,151,48,1) 0%, rgba(251,80,70,1) 88%)',
+              backgroundClip: 'content-box, border-box',
+              borderImageSource:
+                ' linear-gradient(90deg, rgba(254,151,48,1) 0%, rgba(251,80,70,1) 88%)',
+            }}
+          />
+           <Textarea
+            w={['75%', '401px']}
+            h={['93px', '1.4px']}
+            display={['block','none']}
+            placeholder="A brief description of yourself"
+            textAlign="center"
+            color='#566467'
             resize="none"
             fontSize={['12px', '14px']}
             py="1.5rem"
@@ -214,16 +240,20 @@ const Profile = () => {
         >
           <InputGroup
             w={['80%', '33.5rem']}
+            h={['44px','49px']}
             bg="#012B37"
             border="none"
             display="flex"
             borderRadius="12px"
+            alignItems='center'
             justifyContent="space-between"
             outline="none"
           >
             <InputLeftElement
               pointerEvents="none"
               w={['5rem', '5rem']}
+              h='full'
+              p='.15rem'
               color="#fff"
               fontSize={['12px', '14px']}
               borderRight="1px solid #033945"
