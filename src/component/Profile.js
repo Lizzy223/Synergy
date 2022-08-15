@@ -265,6 +265,7 @@ const Profile = () => {
               w="20rem"
               fontWeight="500"
               borderRadius="0px"
+              fontSize={['12px','14px']}
               outline="0 !important"
               _active={{
                 border: 'none !important',
