@@ -193,7 +193,7 @@ const Profile = () => {
             color='#566467'
             resize="none"
             fontSize={['12px', '14px']}
-            py="1.5rem"
+            py="2.2rem"
             outline="0 !important"
             _focus={{ outline: 'none !important' }}
             boxShadow="none !important"
