@@ -132,9 +132,9 @@ const Profile = () => {
               }}
               style={{
                 borderRadius: '50%',
-                border: '2x solid',
+                border: '1x solid',
                 borderImageSlice: 1,
-                borderWidth: '2px',
+                borderWidth: '1px',
                 boxShadow:
                   '1px 1px 1px 1px linear-gradient(90deg, rgba(254,151,48,1) 0%, rgba(251,80,70,1) 88%)',
                 backgroundClip: 'content-box, border-box',
