@@ -267,7 +267,7 @@ const Profile = () => {
         >
           Timeline
         </Text>
-        <Tabs isFitted m='auto' w={['90%', '536px']}>
+        <Tabs isFitted m={['auto','0']} w={['90%', '536px']}>
           <TabList mb="1em">
             <Tab
               color="#878787"
