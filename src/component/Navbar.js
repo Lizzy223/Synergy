@@ -49,7 +49,7 @@ const Navbar = () => {
         <Stack display={['none', 'flex']}>
           <Image src="/assets/Logo.png" alt="logo" />
         </Stack>
-        <Stack display={['none', 'flex']}>
+        <Stack display={['none','flex','none', 'flex']}>
           <InputGroup
             borderRadius="24px"
             w="19rem"
@@ -74,7 +74,7 @@ const Navbar = () => {
         </Stack>
         <Stack
           direction="row"
-          gap={['6', '6']}
+          gap={['3','3','3', '6']}
           display={['none', 'flex']}
           alignItems="center"
         >
@@ -90,7 +90,7 @@ const Navbar = () => {
           <Image src="/assets/line.png" display={['none', 'flex']} alt="line" />
           <Stack
             direction="row"
-            gap="20"
+            gap={["6","6","6","20"]}
             display={['none', 'flex']}
             alignItems="center"
           >
