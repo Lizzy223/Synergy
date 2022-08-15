@@ -126,7 +126,7 @@ const Profile = () => {
               borderRadius="4px"
               p="10px"
               bg="none"
-              border="1px solid transparent"
+              border="1px solid "
               _hover={{
                 background: 'none',
               }}
