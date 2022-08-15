@@ -4,6 +4,7 @@ import {
   Image,
   Stack,
   Text,
+  Link,
   Textarea,
   VStack,
   Tabs,
@@ -16,10 +17,9 @@ import {
   InputLeftElement,
   Input,
 } from '@chakra-ui/react';
-import React  from 'react';
+import React from 'react';
 
 const Profile = () => {
-    
   return (
     <Box
       bg="#00212D"
@@ -30,7 +30,7 @@ const Profile = () => {
       justifyContent="base-start"
       flexDirection="column"
     >
-      <Box w={['full', '50%']} mt='6rem'>
+      <Box w={['full', '50%']} mt="6rem">
         <Box
           display="flex"
           justifyContent="center"
@@ -77,16 +77,16 @@ const Profile = () => {
           alignItems="center"
           gap="10"
         >
-          <VStack spacing='-1'>
+          <VStack spacing="-1">
             <Text fontWeight="600" color="#fff" fontSize={['16px', '20px']}>
               2k
             </Text>
-            <Text fontWeight="400"  color="#C5CED0" fontSize={['12px', '16px']}>
+            <Text fontWeight="400" color="#C5CED0" fontSize={['12px', '16px']}>
               Followers
             </Text>
           </VStack>
-          <Image src="/assets/line.png" display={['none', 'flex']} alt="line" />
-          <VStack spacing='-1'>
+          <Image src="/assets/line.png" alt="line" />
+          <VStack spacing="-1">
             <Text fontWeight="600" color="#fff" fontSize={['16px', '20px']}>
               1.5k
             </Text>
@@ -98,7 +98,8 @@ const Profile = () => {
         {/* button */}
         <Box
           display="flex"
-          mt="1rem"
+          my="1rem"
+          ml={['0', '2.5rem']}
           alignItems="center"
           justifyContent="center"
           gap="5"
@@ -249,11 +250,11 @@ const Profile = () => {
           </InputGroup>
         </Box>
       </Box>
-      <Divider mt="2rem" h="2px" w='full' borderBottom="none" bg="#033945" />
+      <Divider mt="2rem" h="2px" w="full" borderBottom="none" bg="#033945" />
       <Box
         mt="2rem"
         w={['full', '50%']}
-        h='40vh'
+        h="40vh"
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -266,32 +267,68 @@ const Profile = () => {
         >
           Timeline
         </Text>
-        <Tabs isFitted w={['full','536px']} >
-          <TabList  mb="1em">
-            <Tab color='#878787' fontWeight='600' fontSize={['14px','18px']} borderBottom='2px solid #878787' _selected={{color:'#3DD368', fontWeight:'700', borderBottom:'2px solid #3DD368'}} >Gallery</Tab>
-            <Tab color='#878787' fontWeight='600' fontSize={['14px','18px']} borderBottom='2px solid #878787' _selected={{color:'#3DD368',fontWeight:'700', borderBottom:'2px solid #3DD368'}}>Posts</Tab>
-          </TabList>
-          <TabPanels> 
-            <TabPanel flexDirection='column' alignItems='center' gap='3' display='flex'>
-              <Text textAlign='center' color='#C5CED0'  fontSize='14px' fontWeight='400' display={['none','block']}>Add Photos to your gallery to make your profile pop</Text>
-              <Button
-              w={['130px', '130px']}
-              fontSize="14px"
-              h="30px"
-              fontWeight='400'
-              color="#fff"
-              borderRadius="24px"
-              p="10px"
-              bg="none"
-              border="1px solid #ED7832"
-              _hover={{
-                background: 'none',
+        <Tabs isFitted w={['full', '536px']}>
+          <TabList mb="1em">
+            <Tab
+              color="#878787"
+              fontWeight="600"
+              fontSize={['14px', '18px']}
+              borderBottom="2px solid #878787"
+              _selected={{
+                color: '#3DD368',
+                fontWeight: '700',
+                borderBottom: '2px solid #3DD368',
               }}
-              
             >
-                <Image src='assets/add-icon.png' alt='' boxSize='' /> &nbsp;
-              Add Photos
-            </Button>
+              Gallery
+            </Tab>
+            <Tab
+              color="#878787"
+              fontWeight="600"
+              fontSize={['14px', '18px']}
+              borderBottom="2px solid #878787"
+              _selected={{
+                color: '#3DD368',
+                fontWeight: '700',
+                borderBottom: '2px solid #3DD368',
+              }}
+            >
+              Posts
+            </Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel
+              flexDirection="column"
+              alignItems="center"
+              gap="3"
+              display="flex"
+            >
+              <Text
+                textAlign="center"
+                color="#C5CED0"
+                fontSize="14px"
+                fontWeight="400"
+                display={['none', 'block']}
+              >
+                Add Photos to your gallery to make your profile pop
+              </Text>
+              <Button
+                w={['130px', '130px']}
+                fontSize="14px"
+                h="30px"
+                fontWeight="400"
+                color="#fff"
+                borderRadius="24px"
+                p="10px"
+                bg="none"
+                border="1px solid #ED7832"
+                _hover={{
+                  background: 'none',
+                }}
+              >
+                <Image src="assets/add-icon.png" alt="" boxSize="" /> &nbsp; Add
+                Photos
+              </Button>
             </TabPanel>
             <TabPanel>
               <p>two!</p>
@@ -299,18 +336,40 @@ const Profile = () => {
           </TabPanels>
         </Tabs>
       </Box>
-      <Stack direction="row" p='.5rem' gap={["6","6"]} borderTop='2px solid #033945' display={["flex",'none']} w='100'  alignItems="center">
-          <Image src="/assets/home.png" alt="home"  />
-          <Image src="/assets/connect.png" alt="connect"  />
-          <Image src='/assets/Post icon.png' alt='post' display={['flex','none']}/>
-          <Image src="/assets/chat.png" alt="chat"  />
-          <Image src="/assets/bell.png" alt="bell"  />
-          <Image src="/assets/line.png" display={['none','flex']} alt="line" />
-          <Stack direction="row" gap="20" display={['none','flex']} alignItems="center">
-            <Image src="/assets/box.png" alt="box"  />
-            <Image src="/assets/Profile.png" alt="Profile"  />
-          </Stack>
-        </Stack>
+      <Stack
+        direction="row"
+        p=".5rem"
+        gap={['6', '6']}
+        borderTop="2px solid #033945"
+        display={['flex', 'none']}
+        w="100"
+        alignItems="center"
+      >
+        <Link>
+          {' '}
+          <Image src="/assets/home.png" alt="home" />
+        </Link>
+        <Link>
+          {' '}
+          <Image src="/assets/connect.png" alt="connect" />
+        </Link>
+        <Link>
+          {' '}
+          <Image
+            src="/assets/Post icon.png"
+            alt="post"
+            display={['flex', 'none']}
+          />
+        </Link>
+        <Link>
+          {' '}
+          <Image src="/assets/chat.png" alt="chat" />
+        </Link>
+        <Link>
+          {' '}
+          <Image src="/assets/bell.png" alt="bell" />
+        </Link>
+      </Stack>
     </Box>
   );
 };

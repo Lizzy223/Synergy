@@ -3,6 +3,7 @@ import {
   Box,
   Image,
   Stack,
+  Link,
   Text,
   InputGroup,
   InputLeftElement,
@@ -77,15 +78,15 @@ const Navbar = () => {
           display={['none', 'flex']}
           alignItems="center"
         >
-          <Image src="/assets/home.png" alt="home" />
-          <Image src="/assets/connect.png" alt="connect" />
-          <Image
+         <Link> <Image src="/assets/home.png" alt="home" /></Link>
+         <Link><Image src="/assets/connect.png" alt="connect" /></Link>
+         <Link><Image
             src="/assets/Post icon.png"
             alt="post"
             display={['flex', 'none']}
-          />
-          <Image src="/assets/chat.png" alt="chat" />
-          <Image src="/assets/bell.png" alt="bell" />
+          /></Link>
+          <Link><Image src="/assets/chat.png" alt="chat" /></Link>
+          <Link> <Image src="/assets/bell.png" alt="bell" /></Link>
           <Image src="/assets/line.png" display={['none', 'flex']} alt="line" />
           <Stack
             direction="row"
@@ -93,8 +94,8 @@ const Navbar = () => {
             display={['none', 'flex']}
             alignItems="center"
           >
-            <Image src="/assets/box.png" alt="box" />
-            <Image src="/assets/Profile.png" alt="Profile" />
+            <Link><Image src="/assets/box.png" alt="box" /></Link>
+            <Link> <Image src="/assets/Profile.png" alt="Profile" /></Link>
           </Stack>
         </Stack>
 
